@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ASCB: Math for IT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#home"><span class="logo" aria-hidden="true">Σ</span>Math for IT</a>
+    <nav class="nav" aria-label="Topics">
+      <a href="#home">Home</a>
+      <a href="#about">About us</a>
+      <a href="#login" class="login-link guest-only">Log in</a>
+      <a href="#topic-graphs" class="auth-only">Graph</a>
+      <a href="#topic-statistics" class="auth-only">Statistics</a>
+      <a href="#topic-finance" class="auth-only">Finance</a>
+      <a href="#topic-geometry" class="auth-only">Geometry</a>
+      <a href="#topic-modern" class="auth-only">Modern uses</a>
+      <button type="button" class="logout auth-only" id="logout">Log out</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <h1>ASCB: Math for IT</h1>
+          <p class="tagline">Where numbers, networks and code meet</p>
+          <p class="lead">Five math topics, the ideas inside each one, and what you should be able to do after studying them. Every topic has a small tool you can try.</p>
+        </div>
+        <svg class="hero-art" viewBox="0 0 400 324" role="img" aria-label="One tile for each topic: a network, a bar chart, a peso coin, a right triangle, a padlock, and a sigma sign">
+          <g class="k1" transform="translate(8 8)">
+            <rect class="tile" width="120" height="148" rx="12"/>
+            <text class="tnum" x="12" y="22">1</text>
+            <g class="c-stroke">
+              <line x1="28" y1="62" x2="72" y2="38"/><line x1="72" y1="38" x2="98" y2="82"/><line x1="98" y1="82" x2="52" y2="100"/>
+              <line x1="52" y1="100" x2="28" y2="62"/><line x1="72" y1="38" x2="52" y2="100"/><line x1="98" y1="82" x2="82" y2="128"/><line x1="52" y1="100" x2="82" y2="128"/>
+            </g>
+            <circle class="node-c" cx="28" cy="62" r="7"/><circle class="node-c" cx="72" cy="38" r="7"/><circle class="node-c" cx="98" cy="82" r="7"/>
+            <circle class="node-c" cx="52" cy="100" r="7"/><circle class="node-c" cx="82" cy="128" r="7"/>
+          </g>
+          <g class="k2" transform="translate(140 8)">
+            <rect class="tile" width="120" height="148" rx="12"/>
+            <text class="tnum" x="12" y="22">2</text>
+            <line class="base" x1="8" y1="128" x2="112" y2="128"/>
+            <g class="c-fill">
+              <rect x="14" y="88" width="14" height="40" rx="2"/><rect x="34" y="58" width="14" height="70" rx="2"/><rect x="54" y="73" width="14" height="55" rx="2"/>
+              <rect x="74" y="33" width="14" height="95" rx="2"/><rect x="94" y="66" width="14" height="62" rx="2"/>
+            </g>
+            <line class="c-dash" x1="8" y1="64" x2="112" y2="64"/>
+          </g>
+          <g class="k3" transform="translate(272 8)">
+            <rect class="tile" width="120" height="148" rx="12"/>
+            <text class="tnum" x="12" y="22">3</text>
+            <circle class="c-stroke" cx="60" cy="78" r="46" stroke-dasharray="3 5"/>
+            <circle class="c-fill" cx="60" cy="78" r="36"/>
+            <text class="tsym" x="60" y="92" text-anchor="middle" style="fill:var(--surface)">₱</text>
+          </g>
+          <g class="k4" transform="translate(8 164)">
+            <rect class="tile" width="120" height="148" rx="12"/>
+            <text class="tnum" x="12" y="22">4</text>
+            <polygon class="c-stroke" points="22,122 100,122 22,46" style="fill:var(--c);fill-opacity:0.2;stroke-linejoin:round"/>
+            <path class="c-stroke" d="M22 108 H36 V122" style="stroke-width:2"/>
+            <text class="tmono" x="60" y="140" text-anchor="middle">a²+b²=c²</text>
+          </g>
+          <g class="k5" transform="translate(140 164)">
+            <rect class="tile" width="120" height="148" rx="12"/>
+            <text class="tnum" x="12" y="22">5</text>
+            <path class="c-stroke" d="M44 74 V60 a16 16 0 0 1 32 0 V74" style="stroke-width:6"/>
+            <rect class="c-fill" x="34" y="72" width="52" height="42" rx="7"/>
+            <circle cx="60" cy="90" r="5" style="fill:var(--surface)"/><rect x="58" y="92" width="4" height="12" style="fill:var(--surface)"/>
+            <text class="tmono" x="60" y="136" text-anchor="middle">0101 1100</text>
+          </g>
+          <g transform="translate(272 164)">
+            <rect width="120" height="148" rx="12" style="fill:var(--fg)"/>
+            <text class="tmono" x="14" y="30" style="fill:var(--bg);font-size:16px">π</text>
+            <text class="tmono" x="92" y="30" style="fill:var(--bg);font-size:16px">√</text>
+            <text class="tsym" x="60" y="100" text-anchor="middle" style="font-size:72px;fill:var(--bg)">Σ</text>
+            <text class="tmono" x="60" y="134" text-anchor="middle" style="fill:var(--bg);opacity:0.8">f(x) = ax + b</text>
+          </g>
+        </svg>
+      </div>
+
+      <p class="verdict guest-only" style="margin-top:2.25rem">The five topics are locked. <a href="#login" style="color:inherit;font-weight:600">Log in</a> to open them.</p>
+      <ol class="index gated">
+        <li class="index-head" aria-hidden="true"><span></span><span>Topic</span><span>Learning outcome</span></li>
+        <li><a href="#topic-graphs"><span class="n">1</span><span class="t">Graphs and Networks</span><span class="o">Analyze and represent networks using graph theory.</span></a></li>
+        <li><a href="#topic-statistics"><span class="n">2</span><span class="t">Statistics and Data Analysis</span><span class="o">Apply statistical tools in data analytics and computing projects.</span></a></li>
+        <li><a href="#topic-finance"><span class="n">3</span><span class="t">Mathematics and Financial Literacy</span><span class="o">Compute project costs and apply basic financial mathematics in IT contexts.</span></a></li>
+        <li><a href="#topic-geometry"><span class="n">4</span><span class="t">Geometry, Measurement, and Spatial Technology</span><span class="o">Apply geometric principles in computer graphics and spatial analysis.</span></a></li>
+        <li><a href="#topic-modern"><span class="n">5</span><span class="t">Modern Applications of Mathematics</span><span class="o">Demonstrate the application of mathematics in cybersecurity and AI.</span></a></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- About us -->
+  <section class="topic" id="about">
+    <div class="wrap topic-grid">
+      <div class="topic-copy">
+        <p class="eyebrow">About us</p>
+        <h2>Why we made this site</h2>
+        <p class="about-text">Math for IT puts five math topics in one place for IT students. Each topic lists its main ideas, states what you should be able to do afterward, and gives you a small tool to practice with instead of only reading.</p>
+        <p class="about-text">Our goal is simple: to show that math is a working tool in computing, from networks and data to security and AI.</p>
+        <p class="members-label" style="margin-top:1.5rem">Made by</p>
+        <ul class="team">
+          <li><img src="images/jestoni-barrios.jpg" alt="Photo of Jestoni Barrios" width="96" height="96"><span>Jestoni Barrios</span></li>
+          <li><img src="images/christian-dave-anda.jpg" alt="Photo of Christian Dave Anda" width="96" height="96"><span>Christian Dave Anda</span></li>
+          <li><img src="images/ma-luisa-odina.jpg" alt="Photo of Ma. Luisa Odina" width="96" height="96"><span>Ma. Luisa Odina</span></li>
+        </ul>
+      </div>
+      <div class="demo">
+        <p class="demo-title">What you will find here</p>
+        <ul class="parts">
+          <li><strong>Topics and learning outcomes</strong><span>The five topics from the course table, with the outcome for each one.</span></li>
+          <li><strong>Plain-English notes</strong><span>A short, simple explanation under every subtopic.</span></li>
+          <li><strong>Practice tools</strong><span>A graph, a score chart, a loan calculator, a distance grid and a cipher to try yourself.</span></li>
+          <li><strong>Quick checks</strong><span>A short quiz under each topic, with an explanation for every answer.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Log in -->
+  <section class="topic guest-only" id="login">
+    <div class="wrap topic-grid">
+      <div class="topic-copy">
+        <p class="eyebrow">Log in</p>
+        <h2>Log in to open the five topics</h2>
+        <p class="about-text">Enter your name and a password to unlock Graphs, Statistics, Finance, Geometry and Modern uses, with their practice tools and quick checks.</p>
+      </div>
+      <div class="demo">
+        <div class="auth-tabs" role="tablist">
+          <button type="button" role="tab" id="tab-in" aria-selected="true" data-go="in">Sign in</button>
+          <button type="button" role="tab" id="tab-up" aria-selected="false" data-go="up">Create account</button>
+        </div>
+        <h3 class="auth-h" id="auth-h">Sign in</h3>
+        <p class="hint" id="auth-sub">Welcome back. Enter your username and password.</p>
+        <form id="auth-form" data-mode="in" novalidate>
+          <div class="field"><label for="au-user">Username</label>
+            <div class="iw"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><input type="text" id="au-user" autocomplete="username" maxlength="16"></div>
+            <span class="hint reg-only">3–16 characters: letters, numbers and _.</span>
+          </div>
+          <div class="field"><label for="au-pass">Password</label>
+            <div class="iw"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><input type="password" id="au-pass" class="has-eye" autocomplete="current-password"><button type="button" class="eye" id="au-eye" aria-label="Show or hide password"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+          </div>
+          <div class="reg-only">
+            <div class="bars" id="au-bars" data-s="0" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <ul class="req" aria-live="polite"><li id="rq-len">At least 8 characters</li><li id="rq-easy">Not a common or easy password</li><li id="rq-user">Doesn’t contain your username</li></ul>
+          </div>
+          <div class="field reg-only"><label for="au-conf">Confirm password</label>
+            <div class="iw"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><input type="password" id="au-conf" autocomplete="new-password"></div>
+          </div>
+          <label class="chk"><input type="checkbox" id="au-keep"><span>Keep me signed in for 30 days<small>Leave this off on shared or lab PCs.</small></span></label>
+          <label class="chk reg-only"><input type="checkbox" id="au-agree"><span>I’ll study honestly and follow the course rules.</span></label>
+          <label class="human reg-only"><input type="checkbox" id="au-human"><span id="au-human-t">I’m not a robot</span></label>
+          <p class="msg" id="au-msg" aria-live="polite"></p>
+          <button type="submit" class="auth-btn"><span id="au-go-t">Sign in</span> <span aria-hidden="true">→</span></button>
+          <p class="auth-swap"><span class="in-only">New here? <button type="button" class="linkbtn" data-go="up">Create account</button></span><span class="reg-only">Already have an account? <button type="button" class="linkbtn" data-go="in">Sign in</button></span></p>
+        </form>
+        <p class="hint">Practice accounts are saved only in this browser. Passwords are scrambled (hashed) before saving, but this is not a real account system.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1 Graphs -->
+  <section class="topic gated" id="topic-graphs">
+    <div class="wrap topic-grid">
+      <div class="topic-copy">
+        <p class="eyebrow">Topic 1 of 5</p>
+        <h2>Graphs and Networks</h2>
+        <ul class="parts">
+          <li><strong>Graph theory basics (vertices, edges, paths)</strong><span>A graph is dots, called vertices, joined by lines, called edges. A path is a walk along the edges.</span></li>
+          <li><strong>Euler and Hamiltonian circuits</strong><span>An Euler circuit uses every edge once. A Hamiltonian circuit visits every vertex once.</span></li>
+          <li><strong>Network applications (computer and data networks)</strong><span>Computers and routers are the vertices. Cables and links are the edges.</span></li>
+        </ul>
+        <div class="outcome">
+          <p class="label">Learning outcome</p>
+          <p>Analyze and represent networks using graph theory.</p>
+        </div>
+      </div>
+      <div class="demo">
+        <p class="demo-title">Try it: Euler paths</p>
+        <p class="hint">Tap a line to remove it or add it back. The degree of a vertex is how many edges touch it.</p>
+        <svg id="graph-svg" viewBox="0 0 320 230" role="group" aria-label="Graph with five vertices A to E. Edges can be switched on and off."></svg>
+        <div class="chips" id="deg-chips" aria-label="Degree of each vertex"></div>
+        <p class="verdict" id="graph-verdict" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 Statistics -->
+  <section class="topic gated" id="topic-statistics">
+    <div class="wrap topic-grid">
+      <div class="topic-copy">
+        <p class="eyebrow">Topic 2 of 5</p>
+        <h2>Statistics and Data Analysis</h2>
+        <ul class="parts">
+          <li><strong>Data organization, tables, charts</strong><span>Put raw numbers into tables and charts so patterns are easy to see.</span></li>
+          <li><strong>Measures of central tendency and dispersion</strong><span>Mean, median and mode show the center. Range and standard deviation show how spread out the data is.</span></li>
+          <li><strong>Probability and risk analysis</strong><span>How likely something is to happen, and how costly it is if it does.</span></li>
+        </ul>
+        <div class="outcome">
+          <p class="label">Learning outcome</p>
+          <p>Apply statistical tools in data analytics and computing projects.</p>
+        </div>
+      </div>
+      <div class="demo">
+        <p class="demo-title">Try it: quiz scores</p>
+        <div class="field">
+          <label for="scores">Scores from 0 to 100, separated by commas</label>
+          <input type="text" id="scores" value="72, 85, 90, 68, 77, 85, 94, 60, 85, 79" autocomplete="off" inputmode="text">
+        </div>
+        <p class="msg" id="stats-msg" aria-live="polite"></p>
+        <svg id="stats-svg" viewBox="0 0 320 150" role="img" aria-label="Bar chart of the scores with a dashed line at the mean"></svg>
+        <p class="hint">Each bar is one score. The dashed line is the mean.</p>
+        <dl class="stats">
+          <div class="stat"><dt>Mean</dt><dd id="s-mean"></dd></div>
+          <div class="stat"><dt>Median</dt><dd id="s-median"></dd></div>
+          <div class="stat"><dt>Mode</dt><dd id="s-mode"></dd></div>
+          <div class="stat"><dt>Range</dt><dd id="s-range"></dd></div>
+          <div class="stat"><dt>Std. deviation</dt><dd id="s-sd"></dd></div>
+          <div class="stat"><dt>At or above mean</dt><dd id="s-prob"></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 Finance -->
+  <section class="topic gated" id="topic-finance">
+    <div class="wrap topic-grid">
+      <div class="topic-copy">
+        <p class="eyebrow">Topic 3 of 5</p>
+        <h2>Mathematics and Financial Literacy</h2>
+        <ul class="parts">
+          <li><strong>Budgeting, interest, loans, investments</strong><span>Plan your money, and see how interest changes what you pay or what you earn.</span></li>
+          <li><strong>Cost-benefit analysis in computing projects</strong><span>Compare what a project costs with what it gives back.</span></li>
+        </ul>
+        <div class="outcome">
+          <p class="label">Learning outcome</p>
+          <p>Compute project costs and apply basic financial mathematics in IT contexts.</p>
+        </div>
+      </div>
+      <div class="demo">
+        <p class="demo-title">Try it: loan and cost-benefit</p>
+        <p class="hint">Example: a small business borrows money for a new system and saves money every month.</p>
+        <div class="fields">
+          <div class="field"><label for="cost">Project cost (₱)</label><input type="number" id="cost" value="120000" min="0" step="1000" inputmode="decimal"></div>
+          <div class="field"><label for="rate">Interest per year (%)</label><input type="number" id="rate" value="10" min="0" step="0.5" inputmode="decimal"></div>
+          <div class="field"><label for="term">Loan term (months)</label><input type="number" id="term" value="24" min="1" step="1" inputmode="numeric"></div>
+          <div class="field"><label for="benefit">Benefit each month (₱)</label><input type="number" id="benefit" value="7000" min="0" step="500" inputmode="decimal"></div>
+        </div>
+        <p class="msg" id="fin-msg" aria-live="polite"></p>
+        <dl class="stats">
+          <div class="stat"><dt>Monthly payment</dt><dd id="f-pay"></dd></div>
+          <div class="stat"><dt>Total interest</dt><dd id="f-interest"></dd></div>
+          <div class="stat"><dt>Total paid</dt><dd id="f-total"></dd></div>
+          <div class="stat"><dt>Total benefit</dt><dd id="f-benefit"></dd></div>
+        </dl>
+        <p class="verdict" id="fin-verdict" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 Geometry -->
+  <section class="topic gated" id="topic-geometry">
+    <div class="wrap topic-grid">
+      <div class="topic-copy">
+        <p class="eyebrow">Topic 4 of 5</p>
+        <h2>Geometry, Measurement, and Spatial Technology</h2>
+        <ul class="parts">
+          <li><strong>Euclidean and non-Euclidean geometry</strong><span>Euclidean geometry follows the rules of a flat plane. Non-Euclidean geometry uses other rules, such as moving only along city blocks or on a curved surface.</span></li>
+          <li><strong>Application in graphics, animation, and GPS</strong><span>Shapes, movement and location on a screen or a map are all calculated with geometry.</span></li>
+        </ul>
+        <div class="outcome">
+          <p class="label">Learning outcome</p>
+          <p>Apply geometric principles in computer graphics and spatial analysis.</p>
+        </div>
+      </div>
+      <div class="demo">
+        <p class="demo-title">Try it: two ways to measure distance</p>
+        <p class="hint">Point A is fixed at (1, 1). Move point B and compare the straight line with the city-block path.</p>
+        <svg id="geo-svg" viewBox="0 0 280 284" role="img" aria-label="Grid showing a straight line and a city-block path from point A to point B"></svg>
+        <div class="fields">
+          <div class="field"><label for="bx">B across (x): <span id="bx-v">8</span></label><input type="range" id="bx" min="0" max="10" step="1" value="8"></div>
+          <div class="field"><label for="by">B up (y): <span id="by-v">7</span></label><input type="range" id="by" min="0" max="10" step="1" value="7"></div>
+        </div>
+        <dl class="stats">
+          <div class="stat"><dt>Straight line</dt><dd id="g-euc"></dd></div>
+          <div class="stat"><dt>City-block path</dt><dd id="g-tax"></dd></div>
+        </dl>
+        <p class="hint">Solid line: Euclidean distance, the shortest way on a flat plane. Dashed path: taxicab distance, moving only along the grid. GPS also measures distance on a curved Earth, where flat-plane rules are only an approximation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 Modern applications -->
+  <section class="topic gated" id="topic-modern">
+    <div class="wrap topic-grid">
+      <div class="topic-copy">
+        <p class="eyebrow">Topic 5 of 5</p>
+        <h2>Modern Applications of Mathematics</h2>
+        <ul class="parts">
+          <li><strong>Cryptography and cybersecurity</strong><span>Math that scrambles data so only the right person can read it.</span></li>
+          <li><strong>Algorithms and artificial intelligence</strong><span>Step-by-step rules that computers follow, and the math that lets AI learn from data.</span></li>
+          <li><strong>Mathematical modeling in environment and health</strong><span>Equations that describe how things like weather or the spread of a disease change over time.</span></li>
+        </ul>
+        <div class="outcome">
+          <p class="label">Learning outcome</p>
+          <p>Demonstrate the application of mathematics in cybersecurity and AI.</p>
+        </div>
+      </div>
+      <div class="demo">
+        <p class="demo-title">Try it: Caesar cipher</p>
+        <p class="hint">A key moves every letter forward in the alphabet. Change the key and the message.</p>
+        <div class="seg" role="radiogroup" aria-label="Mode">
+          <input type="radio" name="mode" id="mode-enc" value="enc" checked><label for="mode-enc">Encrypt</label>
+          <input type="radio" name="mode" id="mode-dec" value="dec"><label for="mode-dec">Decrypt</label>
+        </div>
+        <div class="field">
+          <label for="plain" id="plain-label">Message to encrypt</label>
+          <input type="text" id="plain" value="Math is everywhere" autocomplete="off" spellcheck="false">
+        </div>
+        <div class="field">
+          <label for="shift">Key (shift): <span id="shift-val">3</span></label>
+          <input type="range" id="shift" min="0" max="25" step="1" value="3">
+        </div>
+        <div>
+          <p class="label" id="out-label">Encrypted message</p>
+          <div class="out" id="cipher-out" aria-live="polite"></div>
+        </div>
+        <div>
+          <p class="label">Letter map (shaded letters replace the ones above them)</p>
+          <div class="wheel" id="wheel"></div>
+        </div>
+        <p class="hint">This cipher is easy to break. Modern security uses much harder math, such as very large prime numbers, but the idea is the same: a key turns readable text into scrambled text.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Topics and learning outcomes follow the course table. The tools and quick checks above are simple examples for practice.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
